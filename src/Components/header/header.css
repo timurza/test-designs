@@ -1,0 +1,123 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  max-width: 1440px;
+  margin: 0 auto;
+  /*  border: 2px solid red; */
+}
+
+.header__navigation {
+  /*  height: 97px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 24px;
+  margin-left: 101px;
+}
+
+.header__navigation-button {
+  border: none;
+  height: 56px;
+  background-color: #FFFFFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__navigation-button:hover {
+  border-bottom: #5ECE7B solid 2px;
+}
+
+.header__navigation-button:nth-child(1) {
+  color: #5ECE7B;
+  width: 97px;
+}
+
+.header__navigation-button:nth-child(2) {
+  width: 69px;
+}
+
+.header__navigation-button:nth-child(3) {
+  width: 68px;
+}
+
+.header__logo {
+  background-image: url("../icons/header-logo.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-left: 311px;
+  margin-top: 29px;
+}
+
+.header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 204px;
+  margin: 23px 48px 17px 0px;
+}
+
+.header__actions-spacer {
+  display: block;
+  width: 40px;
+}
+
+.header__actions-spacer:nth-child(2) {
+  margin-left: 22px;
+}
+
+.header__actions-currency {
+  width: 32px;
+  margin-left: 22px;
+  background: url("../icons/dollar-icon.svg");
+  background-repeat: no-repeat;
+  margin-top: 5px;
+}
+
+.header__actions-vector {
+  background: url("../icons/Vector.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  margin-top: 21px;
+}
+
+.header__actions-vector:hover {
+  background: url("../icons/Vector-open.svg");
+  background-repeat: no-repeat;
+}
+
+.header__actions-cart {
+  background-image: url("../icons/cart.svg");
+  background-repeat: no-repeat;
+  margin-left: 22px;
+  width: 20px;
+  border: none;
+  background-color: #FFFFFF;
+  background-position: 25% 55%;
+}
+
+.header .label {
+  display: block;
+  margin-bottom: 30px;
+  color: #1D1F22;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .label:hover {
+  color: #5ECE7B;
+  font-weight: 600;
+}
+/*# sourceMappingURL=header.css.map */
