@@ -36,6 +36,11 @@
   border-bottom: #5ECE7B solid 2px;
 }
 
+.header__navigation-button:hover .label {
+  color: #5ECE7B;
+  font-weight: 600;
+}
+
 .header__navigation-button:nth-child(1) {
   color: #5ECE7B;
   width: 97px;

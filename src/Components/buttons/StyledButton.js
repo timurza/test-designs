@@ -1,4 +1,5 @@
 import React from 'react';
+import './StyledButton.scss';
 /* import '../header/header.scss'; */
 
 

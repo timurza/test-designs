@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react"
 
-{
+let data = {
     "data": {
       "categories": [
         {
@@ -736,3 +736,6 @@ import { render } from "@testing-library/react"
     }
   }
 
+export default function() {
+  return Promise.resolve(data)
+}

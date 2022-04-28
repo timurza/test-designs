@@ -1,8 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
+import fetchData from '../../data';
+import './clothes.scss';
 
 
 
-export default class Clothes extends Component {
+export default class Clothes extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -13,8 +15,8 @@ export default class Clothes extends Component {
     }
 
     componentDidMount(){
-        fetch("./data.js")
-        .then(res => /* console.log(res) */res.json())
+        fetchData()
+        //.then(res => /* console.log(res) */res.json())
         .then(
             (result) => {
                 this.setState({
@@ -40,10 +42,12 @@ export default class Clothes extends Component {
             return <p> Loading...</p>
         } else {
             return (
-                <div>
-                    {items.map(item => (
-                        <img src = {item.data.categories[0].products.gallery} alt ='jacket'/>
-                    ))}
+                <div className='xbox'>
+                    
+                        {items.categories[0].products[3].gallery.map(g =>  (
+                            <img src = {g} alt = 'jacket'/>
+                        ))}
+                    
                 </div>
             )
         }
