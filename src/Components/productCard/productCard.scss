@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+.productCard {
+    margin: 0 auto;
+   /*  max-width: 1440px; */
+
+    &__content{
+        margin-left: 102px;
+        margin-right: 100px;
+        margin-top: 103px;
+        margin: 103px 102px 191px 100px;
+        display: grid;
+        grid-template-columns:  repeat(3, 1fr)  ;
+        grid-template-rows: 1fr  1fr  1fr;
+        grid-row-gap: 103px;
+        
+        
+    }
+    &__image {
+       
+        height: 354px;
+        margin: 16px 16px 11px 16px;
+
+       
+    }
+
+    &__desktop{
+        margin: 0 auto;
+        /* margin-left: 100px;
+        margin-right: 100px; */
+        &:nth-child(4){
+            box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+            filter: drop-shadow(0px 4px 35px rgba(168, 172, 176, 0.19));
+        }
+        
+    }
+
+    &__elements-title {
+        font-family: 'Raleway', sans-serif;
+        color: #1D1F22;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 160%;
+    }
+
+    &__elements-price {
+        font-family: 'Raleway', sans-serif;
+        line-height: 160%;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+}

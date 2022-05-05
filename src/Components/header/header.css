@@ -58,7 +58,7 @@
   background-image: url("../icons/header-logo.png");
   width: 100%;
   background-repeat: no-repeat;
-  margin-left: 311px;
+  margin-left: 368px;
   margin-top: 29px;
 }
 
@@ -67,7 +67,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 204px;
-  margin: 23px 48px 17px 0px;
+  margin: 23px 101px 17px 0px;
 }
 
 .header__actions-spacer {
