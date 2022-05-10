@@ -49,8 +49,8 @@ export default class ProductCard extends React.Component {
                    <img className='productCard__image' src = {items.categories[0].products[0].gallery[0]} alt = 'Nike Air Huarache Le'></img>
                    
                 <div className='productCard__elements'>
-                <div className='productCard__elements-title' >Nike Air Huarache Le</div>
-                <div className='productCard__elements-price'>$144.69</div>
+                <div className='productCard__elements-title' >{items.categories[0].products[0].name}</div>
+                <div className='productCard__elements-price'>${items.categories[0].products[0].prices[0].amount}</div>
                 </div>
              </div>
 
@@ -58,16 +58,16 @@ export default class ProductCard extends React.Component {
                 <img className='productCard__image' src = {items.categories[0].products[1].gallery[5]} alt = 'Jacket'></img>
                 
                 <div className='productCard__elements'>
-                <div className='productCard__elements-title' >Jacket</div>
-                <div className='productCard__elements-price'>$518.47</div>
+                <div className='productCard__elements-title' >{items.categories[0].products[1].name}</div>
+                <div className='productCard__elements-price'>${items.categories[0].products[1].prices[0].amount}</div>
                 </div>
              </div>
 
              <div className='productCard__desktop'>
                 <img className='productCard__image' src = {items.categories[0].products[2].gallery[0]} alt = 'PlayStation 5'></img>
                 <div className='productCard__elements'>
-                <div className='productCard__elements-title' >PlayStation 5</div>
-                <div className='productCard__elements-price'>$844.02</div>
+                <div className='productCard__elements-title' >{items.categories[0].products[2].name}</div>
+                <div className='productCard__elements-price'>${items.categories[0].products[2].prices[0].amount}</div>
                 </div>
              </div>
 
@@ -75,24 +75,24 @@ export default class ProductCard extends React.Component {
                 <div className='productCard__desktop'>
                 <img className='productCard__image' src = {items.categories[0].products[3].gallery[0]} alt = 'xbox'></img>
                 <div className='productCard__elements'>
-                <div className='productCard__elements-title'>Xbox Series S 512GB</div>
-                <div className='productCard__elements-price'>$50.00</div>
+                <div className='productCard__elements-title'>{items.categories[0].products[3].name}</div>
+                <div className='productCard__elements-price'>${items.categories[0].products[3].prices[0].amount}</div>
                 </div>
              </div>
 
              <div className='productCard__desktop'>
                 <img className='productCard__image' src = {items.categories[0].products[4].gallery[0]} alt = 'iMac 2021'></img>
                 <div className='productCard__elements'>
-                <div className='productCard__elements-title'>iMac 2021</div>
-                <div className='productCard__elements-price'>$1688.03</div>
+                <div className='productCard__elements-title'>{items.categories[0].products[4].name}</div>
+                <div className='productCard__elements-price'>${items.categories[0].products[4].prices[0].amount}</div>
                 </div>
              </div>
 
              <div className='productCard__desktop'>
                 <img className='productCard__image' src = {items.categories[0].products[5].gallery[0]} alt = 'iPhone 12 Pro'></img>
                 <div className='productCard__elements'>
-                <div className='productCard__elements-title'>iPhone 12 Pro</div>
-                <div className='productCard__elements-price'>$1000.76</div>
+                <div className='productCard__elements-title'>{items.categories[0].products[5].name}</div>
+                <div className='productCard__elements-price'>${items.categories[0].products[5].prices[0].amount}</div>
                 </div>
              </div>
 
@@ -100,23 +100,19 @@ export default class ProductCard extends React.Component {
                 <img className='productCard__image' src = {items.categories[0].products[6].gallery[0]} alt = 'AirPods Pro'></img>
                 <div className='productCard__elements'>
                 <div className='productCard__elements-title'>AirPods Pro</div>
-                <div className='productCard__elements-price'>$300.23</div>
+                <div className='productCard__elements-price'>${items.categories[0].products[6].prices[0].amount}</div>
                 </div>
              </div>
 
              <div className='productCard__desktop'>
                 <img className='productCard__image' src = {items.categories[0].products[7].gallery[0]} alt = 'AirTag'></img>
                 <div className='productCard__elements'>
-                <div className='productCard__elements-title'>AirTag</div>
-                <div className='productCard__elements-price'>$120.57</div>
+                <div className='productCard__elements-title'>{items.categories[0].products[7].name}</div>
+                <div className='productCard__elements-price'>${items.categories[0].products[7].prices[0].amount}</div>
                 </div>
              </div>
-
-
                     </div>
-                    
-                        
-                    
+                                                              
                 </div>
             )
         }

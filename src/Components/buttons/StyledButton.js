@@ -1,17 +1,18 @@
 import React from 'react';
-import './StyledButton.scss';
-/* import '../header/header.scss'; */
+/* import './styledButton.scss'; */
+
 
 
 
 class StyledButton extends React.Component{
     constructor() {
         super();
-        this.state = {borderBottom: 'none', };
+        this.state = {backgroundColor: '#FFFFFF', };
         this.style = {
-            /* height:'56px', */
+            height:'45px',
+            width:'63px',
             backgroundColor:'#FFFFFF',
-            border: 'none',
+            border: '1px solid #1D1F22',
             fontSize: 16,
             fontFamily: 'Raleway , sansSerif',
             fontWeight: '400',    
@@ -23,23 +24,25 @@ class StyledButton extends React.Component{
     }
     render(){
         return (
-            <button
+            <button className=''
             style={Object.assign({},this.style, {
-                borderBottom:this.state.borderBottom,
+                backgroundColor:this.state.backgroundColor,
                 color:this.state.color,
                 fontWeight:this.state.fontWeight,
               
             })}
             onMouseEnter = {() => {
-                this.setState({ borderBottom: 'solid 2px #5ECE7B',
-                 color:'#5ECE7B',
+                this.setState({ backgroundColor: '#1D1F22',
+                 color:'#FFFFFF',
                  fontWeight: 600,});
             }}
             onMouseLeave = {() => {
-                this.setState({borderBottom: 'none', color:'black',fontWeight:'400',})
+                this.setState({backgroundColor: '#FFFFFF', 
+                color:'black',
+                fontWeight:'400',})
             }}
             >
-             aliens
+             xs
             </button>
         );
     }
